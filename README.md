@@ -32,7 +32,7 @@ an administrative panel for adding products and categories.
 # Installation
  - Clone the repository to your local machine.
 ```rake
-git clone https://github.com/Itshari891/Mstore_eCommerce-FullStack.git
+git clone https://github.com/prabakaran202/Mstore_eCommerce-FullStack.git
 ```
 ## Backend/ecommerceproject
 
