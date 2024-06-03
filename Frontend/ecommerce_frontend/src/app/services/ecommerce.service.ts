@@ -82,6 +82,32 @@ export class EcommerceService {
     }
     return fetch(`http://127.0.0.1:8000/api/cart`,options)
   }
+  addTowishlistService(id:any){
+    let header=new Headers
+    header.append('Content-Type','application/json')
+    let token =this.fetchToken()
+    if(token){
+      header.append('Authorization',token)
+    }
+    let options={
+      method:"POST",
+      headers:header
+    }
+    return fetch(`http://127.0.0.1:8000/api/products/${id}/add_to_wishlist`,options)
+  }
+  wishlistListservice(){
+    let header=new Headers
+    header.append('Content-Type','application/json')
+    let token =this.fetchToken()
+    if(token){
+      header.append('Authorization',token)
+    }
+    let options={
+      method:"GET",
+      headers:header
+    }
+    return fetch(`http://127.0.0.1:8000/api/wishlist`,options)
+  }
   placeOrderService(id:any,data:any){
     let header=new Headers
     header.append('Content-Type','application/json')
@@ -134,6 +160,19 @@ export class EcommerceService {
       headers:header
     }
     return fetch(`http://127.0.0.1:8000/api/cart/${id}`,options)
+  }
+  removeFromwishlistService(id:any){
+    let header=new Headers
+    header.append('Content-Type','application/json')
+    let token =this.fetchToken()
+    if(token){
+      header.append('Authorization',token)
+    }
+    let options={
+      method:"DELETE",
+      headers:header
+    }
+    return fetch(`http://127.0.0.1:8000/api/wishlist/${id}`,options)
   }
   categoryService(){
     let header=new Headers

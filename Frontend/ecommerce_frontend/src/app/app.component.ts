@@ -53,6 +53,15 @@ export class AppComponent {
       this.router.navigateByUrl('signin')
     }
   }
+  wishlist(){
+    if(localStorage.getItem('token') && localStorage.getItem('jwt') ){
+      this.router.navigateByUrl('wishlist')
+    }
+    else{
+      this.router.navigateByUrl('signin')
+    }
+  }
+
   order(){
     if(localStorage.getItem('token') && localStorage.getItem('jwt') ){
       this.router.navigateByUrl('order')

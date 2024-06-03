@@ -7,6 +7,7 @@ from product.models import Product
 from rest_framework.response import Response
 from rest_framework import status
 from cart.models import Cart
+from wishlist.models import wishlist
 
 class OrderView(CreateAPIView):
     serializer_class=OrderSerializer

@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { CartComponent } from './components/cart/cart.component';
+import { wishlistComponent } from './components/wishlist/wishlist.component';
 import { OrderComponent } from './components/order/order.component';
 import { PlaceOrderComponent } from './components/place-order/place-order.component';
 import { CategoryComponent } from './components/category/category.component';
@@ -27,6 +28,7 @@ import { NewcategoryComponent } from './admin_components/newcategory/newcategory
     HomeComponent,
     ProductDetailComponent,
     CartComponent,
+    wishlistComponent,
     OrderComponent,
     PlaceOrderComponent,
     CategoryComponent,

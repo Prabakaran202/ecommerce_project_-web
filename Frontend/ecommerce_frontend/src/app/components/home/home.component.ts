@@ -31,6 +31,16 @@ categories:any
       this.router.navigateByUrl('signin')
     }
   }
+  addtowishlistHomeFunction(id:any){
+    let token=localStorage.getItem('token')
+    if(token){
+      this.service.addTowishlistService(id).then(res=>res.json()).then(data=>console.log(data))
+      this.router.navigateByUrl('wishlist')
+    }
+    else{
+      this.router.navigateByUrl('signin')
+    }
+  }
   navigateToCategoryFunction(id:any){
     this.service.categoryDetailService(id).then(res=>res.json()).then(data=>data)
     this.router.navigate(['category/',id])

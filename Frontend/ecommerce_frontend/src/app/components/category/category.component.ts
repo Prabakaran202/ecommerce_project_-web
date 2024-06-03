@@ -28,5 +28,9 @@ export class CategoryComponent implements OnInit {
     this.service.addToCartService(id).then(res=>res.json()).then(data=>console.log(data))
     this.router.navigateByUrl('cart')
   }
+  addtowishlistCategoryFunction(id:any){
+    this.service.addTowishlistService(id).then(res=>res.json()).then(data=>console.log(data))
+    this.router.navigateByUrl('wishlist')
+  }
 
 }

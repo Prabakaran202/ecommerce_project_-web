@@ -6,6 +6,7 @@ import { DashboardComponent } from './admin_components/dashboard/dashboard.compo
 import { NewcategoryComponent } from './admin_components/newcategory/newcategory.component';
 import { ProductEditComponent } from './admin_components/product-edit/product-edit.component';
 import { CartComponent } from './components/cart/cart.component';
+import { wishlistComponent } from './components/wishlist/wishlist.component';
 import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'product/:id',component:ProductDetailComponent},
   {path:'cart',component:CartComponent},
+  {path:'wishlist',component:wishlistComponent},
   {path:'order',component:OrderComponent},
   {path:'place-order',component:PlaceOrderComponent},
   {path:'category/:id',component:CategoryComponent},
